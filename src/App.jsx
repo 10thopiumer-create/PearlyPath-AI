@@ -312,8 +312,8 @@ function GemsList() {
         return (
           <div key={i} style={{ background: T.surface, border: `1px solid ${T.border}`, borderRadius: 16, overflow: "hidden" }}>
             <div style={{ height: 130, background: grad, display: "flex", alignItems: "center", justifyContent: "center", position: "relative", overflow: "hidden" }}>
-              {gem.image && <img src={gem.image} alt={gem.name} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }} onError={e => { e.target.style.display = "none"; }} />}
-              <div style={{ fontSize: 50, filter: "drop-shadow(0 2px 10px rgba(0,0,0,0.5))", position: "relative", zIndex: 1 }}>{ic}</div>
+              {gem.image && <img src={gem.image} alt={gem.name} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 1 }} onError={e => { e.target.style.display = "none"; e.target.nextSibling.style.display = "block"; }} />}
+              <div style={{ fontSize: 50, filter: "drop-shadow(0 2px 10px rgba(0,0,0,0.5))", position: "relative", zIndex: 0, display: gem.image ? "none" : "block" }}>{ic}</div>
               <div style={{ position: "absolute", top: 10, left: 10, background: "rgba(8,9,15,0.8)", borderRadius: 20, padding: "4px 10px", fontSize: 11, color: T.gold, fontFamily: "sans-serif", zIndex: 2 }}>{gem.category}</div>
               <div style={{ position: "absolute", top: 10, right: 10, background: "rgba(8,9,15,0.8)", borderRadius: 20, padding: "4px 10px", fontSize: 11, color: T.sub, fontFamily: "sans-serif", zIndex: 2 }}>📍 {gem.area}</div>
             </div>
