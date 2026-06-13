@@ -151,29 +151,29 @@ const CATEGORY_STYLE = {
 };
 
 const BAHRAIN_ATTRACTIONS = [
-  { name: "Adhari Park",              category: "Family",    crowd: "high",   image: "/public/adhari-park.jpg",        lat: 26.1906, lng: 50.4886, desc: "Popular amusement park with rides, games and entertainment" },
-  { name: "Al Areen Wildlife Park",   category: "Nature",    crowd: "low",    image: "/public/al-areen.jpg",           lat: 26.0175, lng: 50.5081, desc: "Arabian wildlife sanctuary — home to oryx and exotic species" },
-  { name: "Al Fateh Grand Mosque",    category: "Religious", crowd: "medium", image: "/public/al-fateh-mosque.jpg",    lat: 26.2141, lng: 50.5998, desc: "One of the world's largest mosques, open to visitors" },
-  { name: "Amwaj Islands",            category: "Luxury",    crowd: "low",    image: "/public/amwaj-islands.jpg",      lat: 26.2706, lng: 50.6428, desc: "Upscale artificial islands with marina, dining & beach clubs" },
-  { name: "Arad Fort",                category: "Heritage",  crowd: "low",    image: "/public/arad-fort.jpg",          lat: 26.2445, lng: 50.6571, desc: "15th-century Portuguese-era fort overlooking the sea in Muharraq" },
-  { name: "Bab Al Bahrain",           category: "Heritage",  crowd: "high",   image: "/public/bab-al-bah.jpg",         lat: 26.2233, lng: 50.5842, desc: "Historic gateway to Manama's old souk — gold, spices & pearls" },
-  { name: "Bahrain Fort",             category: "Heritage",  crowd: "low",    image: "/public/bahrain-fort.jpg",       lat: 26.2348, lng: 50.5106, desc: "UNESCO World Heritage Site — ancient fortress spanning 6,000 years" },
-  { name: "Bahrain Museum",           category: "Culture",   crowd: "low",    image: "/public/bahrain-museum.jpg",     lat: 26.2285, lng: 50.6089, desc: "National museum tracing 6,000 years of Bahraini civilisation" },
-  { name: "Bahrain WTC",              category: "Modern",    crowd: "medium", image: "/public/bahrain-wtc.jpg",        lat: 26.2154, lng: 50.5944, desc: "Iconic twin towers connected by three wind turbines" },
-  { name: "BIC",                      category: "Modern",    crowd: "varies", image: "/public/bic.jpg",                lat: 26.0321, lng: 50.5108, desc: "Bahrain International Circuit — home of Formula 1 racing" },
-  { name: "City Centre",              category: "Shopping",  crowd: "high",   image: "/public/city-centre.jpg",        lat: 26.2352, lng: 50.5558, desc: "Premium waterfront mall in Manama with 300+ stores" },
-  { name: "Dilmunia Mall",            category: "Shopping",  crowd: "medium", image: "/public/dilmunia-mall.jpg",      lat: 26.2711, lng: 50.5633, desc: "Modern island mall with sea views and family entertainment" },
-  { name: "Dragon City",              category: "Shopping",  crowd: "medium", image: "/public/dragon-city.jpg",        lat: 26.1539, lng: 50.4956, desc: "Massive Chinese wholesale market and entertainment complex" },
-  { name: "Financial Harbour",        category: "Modern",    crowd: "low",    image: "/public/financial-harbour.jpg", lat: 26.2354, lng: 50.5867, desc: "Stunning waterfront towers — Bahrain's business heartbeat" },
-  { name: "Gravity",                  category: "Adventure", crowd: "medium", image: "/public/gravity.jpg",            lat: 26.2167, lng: 50.5500, desc: "Bahrain's only indoor skydiving wind tunnel experience" },
-  { name: "Lost Paradise",            category: "Family",    crowd: "high",   image: "/public/lost-paradise.jpg",      lat: 26.2003, lng: 50.4939, desc: "Bahrain's largest water park with thrilling rides for all ages" },
-  { name: "Manama Corniche",          category: "Leisure",   crowd: "medium", image: "/public/manama-corniche.jpg",    lat: 26.2285, lng: 50.5932, desc: "Beautiful waterfront promenade perfect for walks and sunsets" },
-  { name: "Muharraq Pearling",        category: "Heritage",  crowd: "low",    image: "/public/muharraq-pearling.jpg",  lat: 26.2627, lng: 50.6200, desc: "UNESCO pearl merchant trail through historic Muharraq houses" },
-  { name: "Riffa Fort",               category: "Heritage",  crowd: "low",    image: "/public/riffa-fort.jpg",         lat: 26.1208, lng: 50.5551, desc: "19th-century hilltop fort with panoramic views over Riffa Valley" },
-  { name: "The Avenues",              category: "Shopping",  crowd: "high",   image: "/public/the-avenues.jpg",        lat: 26.2044, lng: 50.5257, desc: "Bahrain's largest mall — 500+ stores, dining & entertainment" },
-  { name: "Tree of Life",             category: "Nature",    crowd: "low",    image: "/public/tree-of-life.jpg",       lat: 25.9942, lng: 50.5826, desc: "400-year-old mesquite tree in the desert with no water source" },
-  { name: "Juffair Square",           category: "Leisure",   crowd: "high",   image: "/public/juffair-square.jpg",     lat: 26.2044, lng: 50.6068, desc: "Vibrant dining and nightlife district popular with expats" },
-  { name: "Al Dar Islands",           category: "Nature",    crowd: "low",    image: "/public/al-dar-islands.jpg",     lat: 25.8703, lng: 50.5503, desc: "Pristine private islands with snorkelling and beach clubs" },
+  { name: "Adhari Park",              category: "Family",    crowd: "high",   image: "/adhari-park.jpg",        lat: 26.1906, lng: 50.4886, desc: "Popular amusement park with rides, games and entertainment" },
+  { name: "Al Areen Wildlife Park",   category: "Nature",    crowd: "low",    image: "/al-areen.jpg",           lat: 26.0175, lng: 50.5081, desc: "Arabian wildlife sanctuary — home to oryx and exotic species" },
+  { name: "Al Fateh Grand Mosque",    category: "Religious", crowd: "medium", image: "/al-fateh-mosque.jpg",    lat: 26.2141, lng: 50.5998, desc: "One of the world's largest mosques, open to visitors" },
+  { name: "Amwaj Islands",            category: "Luxury",    crowd: "low",    image: "/amwaj-islands.jpg",      lat: 26.2706, lng: 50.6428, desc: "Upscale artificial islands with marina, dining & beach clubs" },
+  { name: "Arad Fort",                category: "Heritage",  crowd: "low",    image: "/arad-fort.jpg",          lat: 26.2445, lng: 50.6571, desc: "15th-century Portuguese-era fort overlooking the sea in Muharraq" },
+  { name: "Bab Al Bahrain",           category: "Heritage",  crowd: "high",   image: "/bab-al-bah.jpg",         lat: 26.2233, lng: 50.5842, desc: "Historic gateway to Manama's old souk — gold, spices & pearls" },
+  { name: "Bahrain Fort",             category: "Heritage",  crowd: "low",    image: "/bahrain-fort.jpg",       lat: 26.2348, lng: 50.5106, desc: "UNESCO World Heritage Site — ancient fortress spanning 6,000 years" },
+  { name: "Bahrain Museum",           category: "Culture",   crowd: "low",    image: "/bahrain-museum.jpg",     lat: 26.2285, lng: 50.6089, desc: "National museum tracing 6,000 years of Bahraini civilisation" },
+  { name: "Bahrain WTC",              category: "Modern",    crowd: "medium", image: "/bahrain-wtc.jpg",        lat: 26.2154, lng: 50.5944, desc: "Iconic twin towers connected by three wind turbines" },
+  { name: "BIC",                      category: "Modern",    crowd: "varies", image: "/bic.jpg",                lat: 26.0321, lng: 50.5108, desc: "Bahrain International Circuit — home of Formula 1 racing" },
+  { name: "City Centre",              category: "Shopping",  crowd: "high",   image: "/city-centre.jpg",        lat: 26.2352, lng: 50.5558, desc: "Premium waterfront mall in Manama with 300+ stores" },
+  { name: "Dilmunia Mall",            category: "Shopping",  crowd: "medium", image: "/dilmunia-mall.jpg",      lat: 26.2711, lng: 50.5633, desc: "Modern island mall with sea views and family entertainment" },
+  { name: "Dragon City",              category: "Shopping",  crowd: "medium", image: "/dragon-city.jpg",        lat: 26.1539, lng: 50.4956, desc: "Massive Chinese wholesale market and entertainment complex" },
+  { name: "Financial Harbour",        category: "Modern",    crowd: "low",    image: "/financial-harbour.jpg", lat: 26.2354, lng: 50.5867, desc: "Stunning waterfront towers — Bahrain's business heartbeat" },
+  { name: "Gravity",                  category: "Adventure", crowd: "medium", image: "/gravity.jpg",            lat: 26.2167, lng: 50.5500, desc: "Bahrain's only indoor skydiving wind tunnel experience" },
+  { name: "Lost Paradise",            category: "Family",    crowd: "high",   image: "/lost-paradise.jpg",      lat: 26.2003, lng: 50.4939, desc: "Bahrain's largest water park with thrilling rides for all ages" },
+  { name: "Manama Corniche",          category: "Leisure",   crowd: "medium", image: "/manama-corniche.jpg",    lat: 26.2285, lng: 50.5932, desc: "Beautiful waterfront promenade perfect for walks and sunsets" },
+  { name: "Muharraq Pearling",        category: "Heritage",  crowd: "low",    image: "/muharraq-pearling.jpg",  lat: 26.2627, lng: 50.6200, desc: "UNESCO pearl merchant trail through historic Muharraq houses" },
+  { name: "Riffa Fort",               category: "Heritage",  crowd: "low",    image: "/riffa-fort.jpg",         lat: 26.1208, lng: 50.5551, desc: "19th-century hilltop fort with panoramic views over Riffa Valley" },
+  { name: "The Avenues",              category: "Shopping",  crowd: "high",   image: "/the-avenues.jpg",        lat: 26.2044, lng: 50.5257, desc: "Bahrain's largest mall — 500+ stores, dining & entertainment" },
+  { name: "Tree of Life",             category: "Nature",    crowd: "low",    image: "/tree-of-life.jpg",       lat: 25.9942, lng: 50.5826, desc: "400-year-old mesquite tree in the desert with no water source" },
+  { name: "Juffair Square",           category: "Leisure",   crowd: "high",   image: "/juffair-square.jpg",     lat: 26.2044, lng: 50.6068, desc: "Vibrant dining and nightlife district popular with expats" },
+  { name: "Al Dar Islands",           category: "Nature",    crowd: "low",    image: "/al-dar-islands.jpg",     lat: 25.8703, lng: 50.5503, desc: "Pristine private islands with snorkelling and beach clubs" },
 ];
 
 const MOODS = [
@@ -574,7 +574,7 @@ Return ONLY raw JSON: {"day":${d},"theme":"3 vivid words","morning":{"time":"9:0
     <div className="pp-screen" style={s.app}>
       <div style={s.header}>
         <div style={s.logo}>
-          <img src="/logo.jpg" alt="PearlyPath logo" style={{ width: 36, height: 36, borderRadius: "50%", objectFit: "cover", border: `1px solid ${T.navy}` }} />
+          <img src="/logo.jpg" alt="PearlyPath logo" style={{ width: 42, height: 42, borderRadius: 10, objectFit: "cover", border: `1px solid ${T.navy}` }} />
           <div>
             <div style={s.logoText}>PearlyPath AI</div>
             <div style={s.logoSub}>YOUR AI GUIDE TO BAHRAIN</div>
@@ -583,8 +583,8 @@ Return ONLY raw JSON: {"day":${d},"theme":"3 vivid words","morning":{"time":"9:0
       </div>
       <div style={s.hero}>
         <style>{`@keyframes pulse{0%,100%{box-shadow:0 0 12px rgba(43,90,168,0.5)}50%{box-shadow:0 0 32px rgba(43,90,168,0.9),0 0 60px rgba(201,168,76,0.4)}}`}</style>
-        <div style={{ width: 110, height: 110, margin: "0 auto 24px", animation: "pulse 2.5s ease-in-out infinite", borderRadius: 20, overflow: "hidden", border: `1px solid ${T.border}` }}>
-          <img src="/logo.jpg" alt="PearlyPath" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+        <div style={{ width: 140, height: 140, margin: "0 auto 24px", animation: "pulse 2.5s ease-in-out infinite", borderRadius: 24, overflow: "hidden", border: `1px solid ${T.border}`, background: T.surface }}>
+          <img src="/logo.jpg" alt="PearlyPath" style={{ width: "100%", height: "100%", objectFit: "contain" }} />
         </div>
         <div style={s.heroTitle}>PEARLYPATH AI</div>
         <div style={s.heroSub}>BAHRAIN'S INTELLIGENT TOURISM COMPANION</div>
@@ -610,7 +610,7 @@ Return ONLY raw JSON: {"day":${d},"theme":"3 vivid words","morning":{"time":"9:0
     <div className="pp-screen" style={s.app}>
       <div style={s.header}>
         <div style={s.logo}>
-          <img src="/logo.jpg" alt="PearlyPath logo" style={{ width: 28, height: 28, borderRadius: "50%", objectFit: "cover" }} />
+          <img src="/logo.jpg" alt="PearlyPath logo" style={{ width: 36, height: 36, borderRadius: 8, objectFit: "cover" }} />
           <div style={s.logoText}>PearlyPath AI</div>
         </div>
         <button className="pp-btn-press" style={s.navBtn} onClick={() => { playSound("click"); navigateTo("home"); }}>← Home</button>
@@ -681,7 +681,7 @@ Return ONLY raw JSON: {"day":${d},"theme":"3 vivid words","morning":{"time":"9:0
     <div className="pp-screen" style={s.app}>
       <div style={s.header}>
         <div style={s.logo}>
-          <img src="/logo.jpg" alt="PearlyPath logo" style={{ width: 28, height: 28, borderRadius: "50%", objectFit: "cover" }} />
+          <img src="/logo.jpg" alt="PearlyPath logo" style={{ width: 36, height: 36, borderRadius: 8, objectFit: "cover" }} />
           <div style={s.logoText}>PearlyPath AI</div>
         </div>
         <button className="pp-btn-press" style={s.navBtn} onClick={() => { playSound("click"); navigateTo("planner"); setItinerary(null); }}>← Replan</button>
