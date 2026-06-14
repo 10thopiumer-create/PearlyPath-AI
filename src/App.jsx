@@ -80,7 +80,7 @@ const T = {
 
 // ─── DEMO MODE ────────────────────────────────────────────────────────────────
 // Set to false once you have an API key and your /api/chat route is working
-const DEMO_MODE = true;
+const DEMO_MODE = false;
 
 const DEMO_ITINERARY_META = {
   summary: "An immersive journey through Bahrain's ancient pearling heritage, vibrant souks, and hidden coastal gems — perfectly balanced for a curious explorer.",
