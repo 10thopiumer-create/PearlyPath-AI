@@ -1,10 +1,20 @@
 import React, { useState, useRef, useEffect } from "react";
 
 // ─── MARKDOWN RENDERER ────────────────────────────────────────────────────────
-// Converts **bold**, *italic* and newlines from AI responses into proper JSX
 const renderMarkdown = (text) => {
   if (!text) return null;
   return text.split('\n').map((line, li, arr) => {
+    // Strip leading # headers — render as bold text instead
+    const headerMatch = line.match(/^#{1,3}\s+(.+)/);
+    if (headerMatch) {
+      return <span key={li}><strong style={{ fontWeight: "bold", color: "inherit" }}>{headerMatch[1]}</strong>{li < arr.length - 1 && <br />}</span>;
+    }
+    // Strip leading dash bullets — keep as plain text with emoji dot
+    const bulletMatch = line.match(/^[-*]\s+(.+)/);
+    if (bulletMatch) {
+      line = "· " + bulletMatch[1];
+    }
+    // Process inline **bold** and *italic*
     const parts = [];
     const regex = /\*\*(.+?)\*\*|\*(.+?)\*/g;
     let last = 0, match;
@@ -460,7 +470,7 @@ Return ONLY raw JSON (no backticks): {"day":${d},"theme":"3 vivid words","mornin
     setChatLoading(true);
 
     const history = [...chatMessages, { role: "user", content: userMsg }];
-    const systemCtx = `PearlyPath AI Bahrain guide. Answer tourism questions in 2-3 sentences max. Be specific and practical. Mood:${mood||"?"} Budget:${budget||"?"}.`;
+    const systemCtx = `You are PearlyPath AI, a Bahrain tourism guide. Answer in plain text only — no markdown, no asterisks, no hashtags, no bullet dashes. Use emoji for structure instead. Keep answers concise and practical. Mood:${mood||"?"} Budget:${budget||"?"}.`;
 
     try {
       const res = await fetch("/api/chat", {
@@ -497,7 +507,7 @@ Return ONLY raw JSON (no backticks): {"day":${d},"theme":"3 vivid words","mornin
         body: JSON.stringify({
           model: "claude-haiku-4-5-20251001",
           max_tokens: 300,
-          messages: [{ role: "user", content: `Translate this to Arabic for a tourist in Bahrain. Provide: the Arabic script, the transliteration, and a usage tip. Keep it brief (3 lines max): "${transInput}"` }],
+          messages: [{ role: "user", content: `Translate this to Arabic for a tourist in Bahrain. Plain text only, no markdown or asterisks. Provide: the Arabic script, the transliteration, and a usage tip. 3 lines max: "${transInput}"` }],
         }),
       });
       const data = await res.json();
